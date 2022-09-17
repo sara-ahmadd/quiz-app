@@ -1,0 +1,148 @@
+@use "./sass/_mixins.scss" as *;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eaf3f5;
+}
+$main_color: rgb(136, 213, 235);
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: $main_color;
+  @include borderRadius;
+  .choose-category {
+    display: flex;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+      padding: 10px;
+      background-color: #fff;
+      font-weight: 500;
+      @include borderRadius;
+    }
+  }
+  .category {
+    text-transform: capitalize;
+    @extend .choose-category;
+    background-color: #fff;
+    @include borderRadius;
+    padding: 20px 10px;
+  }
+  .question {
+    padding: 20px 10px;
+    background-color: #fff;
+    @include borderRadius;
+    & > p {
+      padding: 20px 0;
+    }
+    .answers {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      label {
+        text-transform: capitalize;
+        padding: 10px;
+      }
+      .submit {
+        align-self: center;
+        width: 30%;
+        button {
+          color: #fff;
+          font-weight: 400;
+          width: 100%;
+          font-size: 20px;
+          cursor: pointer;
+          padding: 10px;
+          background-color: $main_color;
+          border: none;
+          @include borderRadius;
+          @include transition;
+          &:hover {
+            background-color: rgb(27, 192, 237);
+          }
+        }
+      }
+    }
+  }
+  .questions-count {
+    position: relative;
+    padding: 20px 0;
+    .buttons {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: flex;
+      padding: 0 30px;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      @include transformY;
+      button {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        @include borderRadius50;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+      }
+    }
+    ul {
+      width: 100%;
+      margin: 0 auto;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      li {
+        width: 20px;
+        height: 20px;
+        @include borderRadius50;
+        background-color: #fff;
+        position: relative;
+        &.active::after {
+          position: absolute;
+          content: "";
+          width: 50%;
+          height: 50%;
+          top: 50%;
+          left: 50%;
+          background-color: $main_color;
+          @include borderRadius50;
+          @include transform;
+        }
+      }
+    }
+  }
+  .grade {
+    display: none;
+    p {
+      padding: 20px;
+      font-size: 25px;
+      font-weight: 500;
+      @include borderRadius;
+      background-color: #fff;
+      margin-bottom: 20px;
+      width: fit-content;
+    }
+  }
+  .time {
+    p {
+      font-weight: 400;
+      font-size: 25px;
+    }
+  }
+}

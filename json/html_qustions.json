@@ -1,0 +1,82 @@
+[
+  {
+    "question": "The purpose of markup is to",
+    "ans_1": "add hypertext capabilities",
+    "ans_2": "enhance the document",
+    "ans_3": "both A & B",
+    "ans_4": "none of the above",
+    "right_ans": "both A & B"
+  },
+  {
+    "question": "There are ___ levels of heading in HTML",
+    "ans_1": "three",
+    "ans_2": "four",
+    "ans_3": "five",
+    "ans_4": "six",
+    "right_ans": "six"
+  },
+  {
+    "question": "Which of the following tags do not require a terminator?",
+    "ans_1": "<u>",
+    "ans_2": "<br>",
+    "ans_3": "<b>",
+    "ans_4": "none of the above",
+    "right_ans": "none of the above"
+  },
+  {
+    "question": "To get the ordered list we use",
+    "ans_1": "<h1>",
+    "ans_2": "<ul>",
+    "ans_3": "<ol>",
+    "ans_4": "<ml>",
+    "right_ans": "<ol>"
+  },
+  {
+    "question": "For a particular font its size attribute can be an absolute value ranging form",
+    "ans_1": "1-10",
+    "ans_2": "1-9",
+    "ans_3": "1-8",
+    "ans_4": "1-7",
+    "right_ans": "1-10"
+  },
+  {
+    "question": "The Major components of the Web browser are ___",
+    "ans_1": " Menu Bar",
+    "ans_2": "ToolBar",
+    "ans_3": "Location",
+    "ans_4": "All Of the Above",
+    "right_ans": "All Of the Above"
+  },
+  {
+    "question": "Which one of the following tags is used to insert graphics in the webpage",
+    "ans_1": "<image>",
+    "ans_2": "<images>",
+    "ans_3": "<img>",
+    "ans_4": "<graphics>",
+    "right_ans": "<img>"
+  },
+  {
+    "question": "The _____ element can be used to identify your html file to the outside world",
+    "ans_1": "title",
+    "ans_2": "body",
+    "ans_3": "head",
+    "ans_4": "none of the above",
+    "right_ans": "none of the above"
+  },
+  {
+    "question": "html comment should be enclosed between",
+    "ans_1": "<!-and — >",
+    "ans_2": "<! And !>",
+    "ans_3": "<!— and –“”",
+    "ans_4": "none of the above",
+    "right_ans": "<!-and — >"
+  },
+  {
+    "question": "The decimal range of network address for class b network is between",
+    "ans_1": "127-190",
+    "ans_2": "128-190",
+    "ans_3": "128-191",
+    "ans_4": "127-255",
+    "right_ans": " 128-191"
+  }
+]

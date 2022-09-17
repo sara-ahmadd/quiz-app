@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Pseudo-classes In CSS",
+    "ans_1": "Match A Specified Element",
+    "ans_2": "Select The Active Links",
+    "ans_3": "Are Used To Select All The Visited Links",
+    "ans_4": " Are Used To Define A Special State Of An Element",
+    "right_ans": "Are Used To Define A Special State Of An Element"
+  },
+  {
+    "question": "Which Event Will Be Used When A Connection To The Server Is Opened",
+    "ans_1": " Onmessage",
+    "ans_2": "Onopen",
+    "ans_3": "Onerror",
+    "ans_4": "None Of The Above",
+    "right_ans": "Onopen"
+  },
+  {
+    "question": "Which Is The Correct CSS Syntax?",
+    "ans_1": "Body:color=black",
+    "ans_2": " {body;color:black}",
+    "ans_3": "{body:color=black(body}",
+    "ans_4": "Body {color: Black}",
+    "right_ans": "Body {color: Black}"
+  },
+  {
+    "question": "Which CSS Property Is Used For Controlling The Layout?",
+    "ans_1": "Header",
+    "ans_2": "Footer",
+    "ans_3": "Display",
+    "ans_4": "None Of The Above",
+    "right_ans": "Display"
+  },
+  {
+    "question": "Which Of The Following Properties Will We Use To Display Border Around A Cell Without Any Content ?",
+    "ans_1": "Noncontent-cell",
+    "ans_2": "Blank-cell",
+    "ans_3": "Empty-cell",
+    "ans_4": "Void-cell",
+    "right_ans": "Empty-cell"
+  },
+  {
+    "question": "What Should Be The Table Width, So That The Width Of A Table Adjust To The Current Width Of The Browser Window?",
+    "ans_1": "640 Pixels",
+    "ans_2": "100.00%",
+    "ans_3": "Full-screen",
+    "ans_4": "1024 Px",
+    "right_ans": "100.00%"
+  },
+  {
+    "question": "How Can We Write Comment Along With CSS Code ?",
+    "ans_1": "/ A Comment /",
+    "ans_2": "// A Comment //",
+    "ans_3": "/* A Comment */",
+    "ans_4": "<' A Comment'>",
+    "right_ans": "/* A Comment */"
+  },
+  {
+    "question": "Which CSS Property Is Used To Control The Text Size Of An Element ?",
+    "ans_1": " Font-style",
+    "ans_2": "Font-size",
+    "ans_3": "Text-size",
+    "ans_4": "Text-style",
+    "right_ans": "Font-size"
+  },
+  {
+    "question": "The Default Value Of 'position' Attribute Is",
+    "ans_1": "Fixed",
+    "ans_2": "Absolute",
+    "ans_3": " Inherit",
+    "ans_4": "Static",
+    "right_ans": "Static"
+  },
+  {
+    "question": "Which Of The Following Selector Selects The Elements That Are Checked?",
+    "ans_1": " E ~ F",
+    "ans_2": "::after",
+    "ans_3": ":checked",
+    "ans_4": "None Of The Mentioned",
+    "right_ans": ":checked"
+  }
+]

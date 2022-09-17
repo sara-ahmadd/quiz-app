@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Javascript is an _______ language?",
+    "ans_1": "Object-Oriented",
+    "ans_2": "Object-Based",
+    "ans_3": "Assembly-language",
+    "ans_4": "High-level",
+    "right_ans": "Object-Based"
+  },
+  {
+    "question": "Which one of the following also known as Conditional Expression:",
+    "ans_1": "Alternative to if-else",
+    "ans_2": "Switch statement",
+    "ans_3": "If-then-else statement",
+    "ans_4": "immediate if",
+    "right_ans": "immediate if"
+  },
+  {
+    "question": "In JavaScript, what is a block of statement?",
+    "ans_1": "Conditional block",
+    "ans_2": "block that combines a number of statements into a single compound statement",
+    "ans_3": "both conditional block and a single statement",
+    "ans_4": "block that contains a single statement",
+    "right_ans": "block that combines a number of statements into a single compound statement"
+  },
+  {
+    "question": "When interpreter encounters an empty statements, what it will do:",
+    "ans_1": "Shows a warning",
+    "ans_2": "Prompts to complete the statement",
+    "ans_3": "Throws an error",
+    "ans_4": "Ignores the statements",
+    "right_ans": "Ignores the statements"
+  },
+  {
+    "question": " The function and var are known as:",
+    "ans_1": "Keywords",
+    "ans_2": "Data types",
+    "ans_3": "Declaration statements",
+    "ans_4": "Prototypes",
+    "right_ans": "Declaration statements"
+  },
+  {
+    "question": "Which of the following variables takes precedence over the others if the names are the same?",
+    "ans_1": "Global variable",
+    "ans_2": "The local element",
+    "ans_3": "The two of the above",
+    "ans_4": "None of the above",
+    "right_ans": "The local element"
+  },
+  {
+    "question": "Which one of the following is the correct way for calling the JavaScript code?",
+    "ans_1": "Preprocessor",
+    "ans_2": "Triggering Event",
+    "ans_3": "RMI",
+    "ans_4": "Function/Method",
+    "right_ans": "Function/Method"
+  },
+  {
+    "question": "Which of the following type of a variable is volatile?",
+    "ans_1": "Mutable variable",
+    "ans_2": "Dynamic variable",
+    "ans_3": "Volatile variable",
+    "ans_4": "Immutable variable",
+    "right_ans": "Mutable variable"
+  },
+  {
+    "question": "Which of the following option is used as hexadecimal literal beginning?",
+    "ans_1": "00",
+    "ans_2": "0x",
+    "ans_3": "0X",
+    "ans_4": "Both 0x and 0X",
+    "right_ans": "Both 0x and 0X"
+  },
+  {
+    "question": " In the JavaScript, which one of the following is not considered as an error:",
+    "ans_1": "Syntax error",
+    "ans_2": "Missing of semicolons",
+    "ans_3": "Division by zero",
+    "ans_4": "Missing of Bracket",
+    "right_ans": "Division by zero"
+  }
+]
