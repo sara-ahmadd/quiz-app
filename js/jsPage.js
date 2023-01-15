@@ -7,6 +7,7 @@ let categoryParagraph = document.querySelector(".category p:nth-child(1)");
 let answers = Array.from(document.getElementsByName("answer"));
 let scoreDiv = document.querySelector(".grade p span");
 let timeDiv = document.querySelector(".time p #min-sec");
+let rightAnswerContainer = document.querySelector(".answers .answer");
 
 let i = 0;
 let rightAnswers = 0;
@@ -58,8 +59,12 @@ function countDownIntervalFunction(duration, array) {
       seconds = seconds < 10 ? `0${seconds}` : seconds;
 
       timeDiv.innerHTML = `${minutes} : ${seconds}`;
+      if (--duration < 5) {
+        rightAnswerContainer.style.display = "block";
+      }
       if (--duration < 0) {
         clearInterval(countDownInterval);
+        rightAnswerContainer.style.display = "none";
         submitButton.click();
       }
     }, 1000);

@@ -98,6 +98,18 @@ body {
 .quiz-container .question .answers .submit button:hover {
   background-color: rgb(27, 192, 237);
 }
+.quiz-container .question .answers .answer {
+  width: 100%;
+  padding: 10px;
+  color: #8b8888;
+  font-weight: bold;
+  font-size: 20px;
+  display: none;
+}
+.quiz-container .question .answers .answer #right_ans {
+  color: #000;
+  font-weight: normal;
+}
 .quiz-container .questions-count {
   position: relative;
   padding: 20px 0;
@@ -185,11 +197,11 @@ body {
   -o-border-radius: 10px;
   background-color: #fff;
   margin-bottom: 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .quiz-container .time p {
   font-weight: 400;
   font-size: 25px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

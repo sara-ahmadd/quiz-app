@@ -72,6 +72,18 @@ $main_color: rgb(136, 213, 235);
           }
         }
       }
+      .answer {
+        width: 100%;
+        padding: 10px;
+        color: #8b8888;
+        font-weight: bold;
+        font-size: 20px;
+        #right_ans {
+          color: #000;
+          font-weight: normal;
+        }
+        display: none;
+      }
     }
   }
   .questions-count {

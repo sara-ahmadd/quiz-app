@@ -1,0 +1,26 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "watch-pug": "pug index.pug css.pug js.pug -w -o . ",
+    "watch-sass": "sass -w css/main.scss:css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sara-ahmadd/quiz-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sara-ahmadd/quiz-app/issues"
+  },
+  "homepage": "https://github.com/sara-ahmadd/quiz-app#readme",
+  "dependencies": {
+    "firebase": "^9.14.0",
+    "pug": "^3.0.2",
+    "sass": "^1.57.1",
+    "surge": "^0.23.1"
+  }
+}

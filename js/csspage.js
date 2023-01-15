@@ -5,6 +5,7 @@ let qustionsCount = document.querySelector(".category p span");
 let submitButton = document.querySelector(".answers .submit button");
 let categoryParagraph = document.querySelector(".category p:nth-child(1)");
 let timeDiv = document.querySelector(".time p #min-sec");
+let rightAnswerContainer = document.querySelector(".answers .answer");
 
 let i = 0;
 let countDownInterval;
@@ -22,23 +23,24 @@ cssRequest.onreadystatechange = () => {
     categoryParagraph.innerHTML = "CSS category";
     //iii- get the response from responseText property & convert it into js object.
     let result = JSON.parse(cssRequest.responseText);
+    let questions = [...result];
     //create bullets corresponding to questions count
     bulletsParent.innerHTML = "";
-    result.map((item) => {
+    questions.map((item) => {
       bulletsParent.append(document.createElement("li"));
     });
     //get the count of questions from json file.
     qustionsCount.innerHTML = result.length;
-    getQuestions(result, 0);
+    getQuestions(questions, 0);
     bulletsParent.children[0].classList.add("active");
 
-    countDownIntervalFunction(120, result);
+    countDownIntervalFunction(120, questions);
 
     //on clicking submit button
     submitButton.onclick = () => {
       clearInterval(countDownInterval);
-      countDownIntervalFunction(120, result);
-      nextQuestion(result);
+      countDownIntervalFunction(120, questions);
+      nextQuestion(questions);
       i++;
     };
   }
@@ -55,8 +57,12 @@ function countDownIntervalFunction(duration, array) {
       seconds = seconds < 10 ? `0${seconds}` : seconds;
 
       timeDiv.innerHTML = `${minutes} : ${seconds}`;
+      if (--duration < 5) {
+        rightAnswerContainer.style.display = "block";
+      }
       if (--duration < 0) {
         clearInterval(countDownInterval);
+        rightAnswerContainer.style.display = "none";
         submitButton.click();
       }
     }, 1000);

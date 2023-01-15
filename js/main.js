@@ -6,6 +6,8 @@ let answerOne = document.querySelector(".answers #one label");
 let answerTwo = document.querySelector(".answers #two label");
 let answerThree = document.querySelector(".answers #three label");
 let answerFour = document.querySelector(".answers #four label");
+let rightAnswer = document.querySelector(".answers .answer #right_ans");
+let rightAnswerContainer = document.querySelector(".answers .answer");
 let categoryParagraph = document.querySelector(".category p:nth-child(1)");
 let submitButton = document.querySelector(".answers .submit button");
 let answers = Array.from(document.getElementsByName("answer"));
@@ -59,7 +61,7 @@ newRequest.onreadystatechange = () => {
 
 // get the data from the response that is received to show them in the html page.
 function getQuestions(array, i) {
-  let { question, ans_1, ans_2, ans_3, ans_4 } = array[i];
+  let { question, ans_1, ans_2, ans_3, ans_4, right_ans } = array[i];
   questionPlace.textContent = question;
 
   answerOne.textContent = `a) ${ans_1}`;
@@ -73,6 +75,8 @@ function getQuestions(array, i) {
 
   answerFour.textContent = `d) ${ans_4}`;
   addDataAttribute(answerFour.previousElementSibling, `${ans_4}`);
+
+  rightAnswer && (rightAnswer.textContent = `${right_ans}`);
 }
 //function to add Data Attribute To Radio Elements
 let addDataAttribute = (element, value) => {
@@ -151,8 +155,12 @@ function countDown(duration, array) {
       seconds = seconds < 10 ? `0${seconds}` : seconds;
 
       timeDiv.innerHTML = `${minutes} : ${seconds}`;
+      if (--duration < 5) {
+        rightAnswerContainer.style.display = "block";
+      }
       if (--duration < 0) {
         clearInterval(countDownInterval);
+        rightAnswerContainer.style.display = "none";
         submitButton.click();
       }
     }, 1000);
